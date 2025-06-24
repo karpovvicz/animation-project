@@ -89,7 +89,7 @@ export default function NewChallenge({ onDone }) {
               onClick={() => handleSelectImage(image)}
               className={selectedImage === image ? 'selected' : undefined}
             >
-              <img {...image} />
+              <img {...image} alt={image.alt} />
             </motion.li>
           ))}
         </motion.ul>
