@@ -31,7 +31,7 @@ export default function ChallengeItem({
     <motion.li layout exit={{y: -30, opacity: 0 }}>
       <article className="challenge-item">
         <header>
-          <img {...challenge.image} />
+          <img {...challenge.image} alt={challenge.name} />
           <div className="challenge-item-meta">
             <h2>{challenge.title}</h2>
             <p>Complete until {formattedDate}</p>
